@@ -57,7 +57,8 @@ namespace DevFreela.Infrastructure.Auth
                 issuer: issuer,
                 audience: audience,
                 expires: DateTime.Now.AddHours(10),
-                signingCredentials: credentials);
+                signingCredentials: credentials,
+                claims: claims);
 
             var tokenHandler = new JwtSecurityTokenHandler();
 
